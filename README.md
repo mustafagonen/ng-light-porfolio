@@ -5,6 +5,9 @@ Overview
 - **Purpose:** Personal portfolio website for showcasing projects, contact information and a short introduction.
 - **Tech stack:** Angular, TypeScript, SCSS.
 
+Live Demo
+- https://ng-light-portfolio.netlify.app
+
 Features
 - **Homepage:** Hero section and project highlights.
 - **Projects:** Project listing and project detail pages.
@@ -68,10 +71,10 @@ Automatic (recommended):
 npm run build
 ```
 
-and the publish directory is:
+and the publish directory is (note: Netlify Angular plugin may expect the `browser` subfolder):
 
 ```
-dist/mg-portfolio
+dist/mg-portfolio (or dist/mg-portfolio/browser when using @netlify/angular-runtime plugin)
 ```
 
 4. Netlify also uses a redirect rule so client-side routes will serve `index.html`.
